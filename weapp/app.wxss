@@ -1,1 +1,29 @@
-cGFnZSB7CiAgYmFja2dyb3VuZC1jb2xvcjogI2ZhZjhlZjsKICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7CiAgY29sb3I6ICM3NzZlNjU7CiAgaGVpZ2h0OiAxMDAlOwp9CgouY29udGFpbmVyIHsKICB3aWR0aDogMTAwJTsKICBoZWlnaHQ6IDEwMCU7CiAgZGlzcGxheTogZmxleDsKICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOwp9CgpidXR0b24gewogIG1hcmdpbjogMjBycHggMDsKICBiYWNrZ3JvdW5kLWNvbG9yOiAjOGY3YTY2OwogIGNvbG9yOiB3aGl0ZTsKICBib3JkZXItcmFkaXVzOiAxMHJweDsKfQoKYnV0dG9uOjphZnRlciB7CiAgYm9yZGVyOiBub25lOwp9CgpidXR0b24ucGxhaW4gewogIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OwogIGNvbG9yOiBpbmhlcml0Owp9
+page {
+  background-color: #faf8ef;
+  font-family: Arial, sans-serif;
+  color: #776e65;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 20rpx 0;
+  background-color: #8f7a66;
+  color: white;
+  border-radius: 10rpx;
+}
+
+button::after {
+  border: none;
+}
+
+button.plain {
+  background-color: transparent;
+  color: inherit;
+}

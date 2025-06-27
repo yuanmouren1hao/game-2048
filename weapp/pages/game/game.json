@@ -1,1 +1,7 @@
-ewogICJuYXZpZ2F0aW9uQmFyVGl0bGVUZXh0IjogIjIwNDjmiqXlkI0iLAogICJuYXZpZ2F0aW9uQmFyQmFja2dyb3VuZENvbG9yIjogIiNmYWY4ZWYiLAogICJuYXZpZ2F0aW9uQmFyVGV4dFN0eWxlIjogImJsYWNrIiwKICAiYmFja2dyb3VuZENvbG9yIjogIiNmYWY4ZWYiLAogICJkaXNhYmxlU2Nyb2xsIjogdHJ1ZQp9
+{
+    "navigationBarTitleText": "2048游戏",
+    "navigationBarBackgroundColor": "#faf8ef",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#faf8ef",
+    "disableScroll": true
+}

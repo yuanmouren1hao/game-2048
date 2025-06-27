@@ -1,1 +1,53 @@
-PHZpZXcgY2xhc3M9ImNvbnRhaW5lciI+CiAgPCEtLSDmiqXlkI3pmLPlhYnnmoTmiqXlkI0gLS0+Cjwvdmlldz4=
+<view class="container">
+  <!-- 标题和分数区域 -->
+  <view class="header">
+    <view class="title">2048</view>
+    <view class="scores">
+      <view class="score-box">
+        <text class="score-label">分数</text>
+        <text class="score-value">{{score}}</text>
+      </view>
+      <view class="score-box">
+        <text class="score-label">最高分</text>
+        <text class="score-value">{{bestScore}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 游戏网格区域 -->
+  <view class="grid-container">
+    <view class="grid-background">
+      <block wx:for="{{[0,1,2,3]}}" wx:key="*this">
+        <block wx:for="{{[0,1,2,3]}}" wx:key="*this">
+          <view class="grid-cell"></view>
+        </block>
+      </block>
+    </view>
+
+    <view class="tile-container">
+      <block wx:for="{{tiles}}" wx:key="id">
+        <view 
+          class="tile tile-{{item.value}} {{item.merged ? 'tile-merged' : ''}} {{item.new ? 'tile-new' : ''}}"
+          style="left: {{item.x * 25}}%; top: {{item.y * 25}}%"
+        >
+          {{item.value}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 操作按钮区域 -->
+  <view class="controls">
+    <button bindtap="newGame">新游戏</button>
+    <button open-type="share" class="share-btn">分享游戏</button>
+  </view>
+
+  <!-- 游戏结束弹窗 -->
+  <view wx:if="{{gameOver}}" class="game-over">
+    <view class="game-over-content">
+      <text>游戏结束!</text>
+      <text>最终分数: {{score}}</text>
+      <button bindtap="newGame">再玩一次</button>
+    </view>
+  </view>
+</view>

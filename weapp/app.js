@@ -1,1 +1,9 @@
-QXBwKHsKICBvbkxhdW5jaCgpIHsKICAgIC8vIOa1i+ivleaKpeWQjea1i+ivleS4juWKoOWFpeeahOa1i+ivlQogIH0sCiAgCiAgZ2xvYmFsRGF0YTogewogICAgLy8g5omr5o+P5pWw5o2uCiAgfQp9KQ==
+App({
+    onLaunch() {
+        // 小程序初始化时执行
+    },
+
+    globalData: {
+        // 全局数据
+    }
+})
