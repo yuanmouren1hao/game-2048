@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #faf8ef;
+    color: #776e65;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score-box {
+    background: #bbada0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.score-box span:first-child {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.game-intro {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#new-game {
+    background: #8f7a66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#new-game:hover {
+    background: #9f8b77;
+}
+
+.grid-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.grid {
+    background: #bbada0;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tile-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.grid-cell {
+    position: absolute;
+    background: rgba(238, 228, 218, 0.35);
+    border-radius: 3px;
+}
+
+.tile {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+    z-index: 10;
+}
+
+/* 不同数字的方块颜色 */
+.tile-2 {
+    background: #eee4da;
+}
+
+.tile-4 {
+    background: #ede0c8;
+}
+
+.tile-8 {
+    background: #f2b179;
+    color: white;
+}
+
+.tile-16 {
+    background: #f59563;
+    color: white;
+}
+
+.tile-32 {
+    background: #f67c5f;
+    color: white;
+}
+
+.tile-64 {
+    background: #f65e3b;
+    color: white;
+}
+
+.tile-128 {
+    background: #edcf72;
+    color: white;
+    font-size: 30px;
+}
+
+.tile-256 {
+    background: #edcc61;
+    color: white;
+    font-size: 30px;
+}
+
+.tile-512 {
+    background: #edc850;
+    color: white;
+    font-size: 30px;
+}
+
+.tile-1024 {
+    background: #edc53f;
+    color: white;
+    font-size: 25px;
+}
+
+.tile-2048 {
+    background: #edc22e;
+    color: white;
+    font-size: 25px;
+}
+
+@media (max-width: 520px) {
+    .game-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .tile {
+        font-size: 25px;
+    }
+}
