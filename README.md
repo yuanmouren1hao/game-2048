@@ -25,6 +25,9 @@
 3. 在模拟器或真机上体验游戏
 4. 通过滑动屏幕控制数字移动方向
 
+5. ![image](https://github.com/user-attachments/assets/360acaf9-26d6-4f02-b096-fb20c9b938d1)
+
+
 ## 项目结构
 
 ```
